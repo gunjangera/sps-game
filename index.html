@@ -7,31 +7,82 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>ROCK PAPER SCISSOR</h1>
-  <div class="choices">
-    <div class="choice" id="rock">
-      <img src="rock.image.jpeg">
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+    <div class="shape shape-6"></div>
+  </div>
+  
+  <div class="container">
+    <h1 class="title">
+      <span class="title-letter">R</span>
+      <span class="title-letter">O</span>
+      <span class="title-letter">C</span>
+      <span class="title-letter">K</span>
+      <span class="title-space"></span>
+      <span class="title-letter">P</span>
+      <span class="title-letter">A</span>
+      <span class="title-letter">P</span>
+      <span class="title-letter">E</span>
+      <span class="title-letter">R</span>
+      <span class="title-space"></span>
+      <span class="title-letter">S</span>
+      <span class="title-letter">C</span>
+      <span class="title-letter">I</span>
+      <span class="title-letter">S</span>
+      <span class="title-letter">S</span>
+      <span class="title-letter">O</span>
+      <span class="title-letter">R</span>
+      <span class="title-space"></span>
+      <span class="title-letter">S</span>
+    </h1>
+    
+    <div class="choices">
+      <div class="choice" id="rock">
+        <div class="choice-inner">
+          <img src="https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=400&h=400&fit=crop" alt="Rock">
+          <div class="choice-glow"></div>
+        </div>
+        <p class="choice-label">ROCK</p>
+      </div>
+      <div class="choice" id="paper">
+        <div class="choice-inner">
+          <img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=400&fit=crop" alt="Paper">
+          <div class="choice-glow"></div>
+        </div>
+        <p class="choice-label">PAPER</p>
+      </div>
+      <div class="choice" id="scissor">
+        <div class="choice-inner">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQLhkVDxmquHFZVXccjI1nE_Rxya3JiKm0NUCnyZEpPRfO_FfzBsbuydswtEoli1HO25vmcsycdxKyp8xDJIPMz89tRdok6kItTk1ddwkKg8rUiFC05uhsO" alt="Scissor">
+          <div class="choice-glow"></div>
+        </div>
+        <p class="choice-label">SCISSOR</p>
+      </div>
     </div>
-    <div class="choice" id="paper">
-      <img src="paper.image.jpeg">
+    
+    <div class="score-board">
+      <div class="score-card your-score">
+        <div class="score-icon">👤</div>
+        <p class="score-value" id="you-scr">0</p>
+        <p class="score-label">YOU</p>
+      </div>
+      <div class="vs-divider">VS</div>
+      <div class="score-card comp-score">
+        <div class="score-icon">🤖</div>
+        <p class="score-value" id="comp-scr">0</p>
+        <p class="score-label">COMPUTER</p>
+      </div>
     </div>
-    <div class="choice" id="scissor">
-      <img src="scissor.image.jpeg">
+    
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
     </div>
   </div>
-  <div class="score-board">
-    <div class="your-score">
-      <p id="you-scr">0</p>
-      <p>you</p>
-    </div>
-    <div class="comp-score">
-      <p id="comp-scr">0</p>
-      <p>computer</p>
-    </div>
-  </div>
-  <div class="msg-container">
-  <p id="msg">Play your move</p>
-  </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
